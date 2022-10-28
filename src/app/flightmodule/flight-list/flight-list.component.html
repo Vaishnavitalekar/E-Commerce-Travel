@@ -1,0 +1,81 @@
+
+        <form [formGroup]="bookform">
+              <h2 class="mb-4 pb-2 pb-md-0 mb-md-5">Booking Details</h2>
+         
+  
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline">
+                      <input formControlName="fname" type="text" id="firstName" class="form-control form-control-lg" />
+                      <label class="form-label" for="firstName">First Name<span class="required">*</span></label>
+                      <div class="required" *ngIf="bookform.controls['fname'].invalid && (bookform.controls['fname'].touched ||  bookform.controls['fname'].dirty) ">
+                        This is required field
+                      </div>
+                    </div>
+  
+                  </div>
+                  <div class="col-md-6 mb-4">
+  
+                    <div class="form-outline">
+                      <input formControlName="lname" type="text" id="lastName" class="form-control form-control-lg" />
+                      <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+                      <div class="required" *ngIf="bookform.controls['lname'].invalid && (bookform.controls['lname'].touched ||  bookform.controls['lname'].dirty) ">
+                        This is required field
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+    
+                      <div class="form-outline">
+                        <input formControlName="passenger" type="number" id="passenger" class="form-control form-control-lg" />
+                        <label class="form-label" for="passenger">No of Passenger<span class="required">*</span></label>
+                        <div class="required" *ngIf="bookform.controls['passenger'].invalid && (bookform.controls['passenger'].touched ||  bookform.controls['passenger'].dirty) ">
+                          This is required field
+                        </div>
+                      </div>
+    
+                    </div>
+                    <div class="col-md-6 mb-4">
+    
+                      <div class="form-outline">
+                        <input formControlName="contact" type="text" id="contact" class="form-control form-control-lg" />
+                        <label class="form-label" for="contact">Contact No <span class="required">*</span></label>
+                        <div class="required" *ngIf="bookform.controls['contact'].invalid && (bookform.controls['contact'].touched ||  bookform.controls['contact'].dirty) ">
+                          This is required field
+                        </div>
+                      </div>
+    
+                    </div>
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-12">
+    
+                      <div class="form-outline">
+                        <input formControlName="email" type="email" id="emailAddress" class="form-control form-control-lg" />
+                        <label class="form-label" for="emailAddress">Email<span class="required">*</span></label>
+                   <div class="required" *ngIf="bookform.controls['email'].invalid && (bookform.controls['email'].touched ||  bookform.controls['email'].dirty) ">
+                          This is required field
+                        </div>
+                      </div>
+    
+    
+                    </div>
+                  </div>
+
+                  <div class="mt-4 pt-2">
+                    <button (click)="bookhere()" type="button" class="btn btn-outline-success">Book here</button>
+                  </div>
+  </form>
+  
+                
+  
+          
+    

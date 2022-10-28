@@ -1,0 +1,156 @@
+{
+  "registeredusers": [
+    {
+      "fname": "vaishnavi",
+      "lname": "talekar",
+      "birthdate": "",
+      "female": "female",
+      "male": "",
+      "email": "talekarvaishnavi2018@gmail.com",
+      "password": "Pass@123",
+      "id": 1
+    },
+    {
+      "fname": "Hariom",
+      "lname": "Talekar",
+      "birthdate": "2002-12-05",
+      "female": "",
+      "male": "male",
+      "email": "talekarhariom2018@gmail.com",
+      "password": "$Hari@2002",
+      "id": 2
+    }
+  ],
+  "flightlist": [
+    {
+      "from": "Mumbai",
+      "to": "Goa",
+      "date": "2022-11-02",
+      "name": "Air India",
+      "price": 5000,
+      "time": "12pm"
+    },
+    {
+      "from": "Mumbai",
+      "to": "Goa",
+      "date": "2022-11-01",
+      "name": "Vistara",
+      "price": 5000,
+      "time": "12pm"
+    },
+    {
+      "from": "Mumbai",
+      "to": "Goa",
+      "date": "2022-11-01",
+      "name": "Indigo",
+      "price": 5000,
+      "time": "12pm"
+    },
+    {
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "name": "Spice Jet",
+      "price": 5000,
+      "time": "12pm"
+    },
+    {
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "name": "Go Air",
+      "price": 5000,
+      "time": "12pm"
+    },
+    {
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "name": "Alliance Air",
+      "price": 5000,
+      "time": "12pm"
+    }
+  ],
+  "FlightBookingDetails": [
+    {
+      "status": "Active",
+      "userdetails": "1",
+      "from": "Mumbai",
+      "to": "Goa",
+      "date": "2022-11-01",
+      "time": "12pm",
+      "price": 5000,
+      "fname": "vaishnavi",
+      "lname": "talekar",
+      "passenger": 1,
+      "contact": "123",
+      "email": "talekarvaishnavi2018@gmail.com",
+      "name": "Indigo",
+      "id": 1
+    },
+    {
+      "status": "Canceled",
+      "userdetails": "1",
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "time": "12pm",
+      "price": 5000,
+      "fname": "komal",
+      "lname": "shinde",
+      "passenger": 1,
+      "contact": "456",
+      "email": "priti@123",
+      "name": "Go Air",
+      "id": 2
+    },
+    {
+      "status": "Canceled",
+      "userdetails": "1",
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "time": "12pm",
+      "price": 5000,
+      "fname": "sonali",
+      "lname": "powar",
+      "passenger": 1,
+      "contact": "456",
+      "email": "priti@123",
+      "name": "Go Air",
+      "id": 3
+    },
+    {
+      "status": "Completed",
+      "userdetails": "1",
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "time": "12pm",
+      "price": 5000,
+      "fname": "priti",
+      "lname": "patil",
+      "passenger": 1,
+      "contact": "456",
+      "email": "priti@123",
+      "name": "Go Air",
+      "id": 4
+    },
+    {
+      "status": "Canceled",
+      "userdetails": "2",
+      "from": "Pune",
+      "to": "Delhi",
+      "date": "2022-11-01",
+      "time": "12pm",
+      "price": 5000,
+      "fname": "hariom",
+      "lname": "talekar",
+      "passenger": 1,
+      "contact": "9022207731",
+      "email": "talekarhariom2018@gmail.com",
+      "name": "Spice Jet",
+      "id": 5
+    }
+  ]
+}

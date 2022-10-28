@@ -1,0 +1,107 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+            <form [formGroup]="registerform">
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input formControlName="fname" type="text" id="firstName" class="form-control form-control-lg" />
+                    <label class="form-label" for="firstName">First Name<span class="required">*</span></label>
+                    <div class="required" *ngIf="registerform.controls['fname'].invalid && (registerform.controls['fname'].touched ||  registerform.controls['fname'].dirty) ">
+                      This is required field
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input formControlName="lname" type="text" id="lastName" class="form-control form-control-lg" />
+                    <label class="form-label" for="lastName">Last Name <span class="required">*</span></label>
+                    <div class="required" *ngIf="registerform.controls['lname'].invalid && (registerform.controls['lname'].touched ||  registerform.controls['lname'].dirty) ">
+                      This is required field
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4 d-flex align-items-center">
+
+                  <div class="form-outline datepicker w-100">
+                    <input formControlName="birthdate" type="date" class="form-control form-control-lg" id="birthdayDate" />
+                    <label for="birthdayDate" class="form-label">Birth Date</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+              
+                   <label class="mb-2 pb-1" for="">Gender:</label>
+                  <div class="form-check form-check-inline">
+                    <input formControlName="female" class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                      value="female" checked />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input formControlName="male" class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                      value="male" />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                 
+                </div>
+              </div>
+
+              
+
+              <div class="row">
+                <div class="col-12">
+
+                  <div class="form-outline">
+                    <input formControlName="email" type="email" id="emailAddress" class="form-control form-control-lg" />
+                    <label class="form-label" for="emailAddress">Email<span class="required">*</span></label>
+                    <div class="required" *ngIf="registerform.controls['email'].invalid && (registerform.controls['email'].touched ||  registerform.controls['email'].dirty) ">
+                      This is required field
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+
+                  <div class="form-outline">
+                    <input formControlName="password" type="password" id="Password" class="form-control form-control-lg" />
+                    <label class="form-label" for="Password">Password<span class="required">*</span></label>
+                    <div class="required" *ngIf="registerform.controls['password'].invalid && (registerform.controls['password'].touched ||  registerform.controls['password'].dirty) ">
+                      This is required field
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+              <div class="mt-4 pt-2">
+                <button (click)="register()" type="button" class="btn btn-outline-success">Register</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  

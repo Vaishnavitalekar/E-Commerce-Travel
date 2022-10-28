@@ -1,0 +1,76 @@
+<form action="" [formGroup]="searchform">
+<div class="outer">
+   <h3>WelCome</h3>
+   <div style="padding:20px">
+   <div >
+    <label class="flabel">From</label>
+        <select class="form-control form-control-lg" id="exampleFormControlSelect1" formControlName="from" >
+          
+          <option>Mumbai</option>
+          <option>Pune</option>
+          </select>
+          <div class="required" *ngIf="searchform.controls['from'].invalid && (searchform.controls['from'].touched ||  searchform.controls['from'].dirty) ">
+            This is required field
+          </div>
+   </div>
+ 
+
+   <div>
+   <label class="flabel" >To</label>
+   <select class="form-control form-control-lg" id="exampleFormControlSelect1" formControlName="to">
+    
+     <option>Delhi</option>
+     <option>Goa</option>
+    </select>
+    <div class="required" *ngIf="searchform.controls['to'].invalid && (searchform.controls['to'].touched ||  searchform.controls['to'].dirty) ">
+      This is required field
+    </div>
+
+  </div>
+ 
+
+   <div>
+    <label class="flabel">Date</label>
+    <input class="form-control form-control-lg" type="date" formControlName="date">
+    <div class="required" *ngIf="searchform.controls['date'].invalid && (searchform.controls['date'].touched ||  searchform.controls['date'].dirty) ">
+      This is required field
+    </div>
+   </div>
+  <br>
+
+   <button  class="btn btn-primary btn-lg btn-rounded px-5" (click)="search()">Search</button>
+  </div>
+</div>
+</form> 
+
+
+
+<div class="container" *ngIf="result.length >0; ">
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Sr No</th>
+      <th scope="col">Flight Name</th>
+      <th scope="col">From</th>
+      <th scope="col">To</th>
+      <th scope="col">Date</th>
+      <th scope="col">Time</th>
+      <th scope="col">Price</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let i of result index as a" >
+      <td>{{a+1}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.from}}</td>
+      <td>{{i.to}}</td>
+      <td>{{i.date}}</td>
+      <td>{{i.time}}</td>
+      <td>{{i.price | currency:'INR'}}</td>
+      <td><button class="btn btn-primary btn-lg btn-rounded px-3" (click)="book(i)">Book</button></td>
+    </tr>
+    
+  </tbody>
+</table>
+</div>
